@@ -1,0 +1,54 @@
+body{
+    background: rgba(255, 165, 0, 0);
+
+}
+
+body p{
+    color: white;
+}
+
+#nav{
+    background-color: #272727;
+}
+
+#navcollapse{
+    background-color: #272727;
+
+}
+
+#hero{
+    width: 100%;
+    height: 750px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+#intro{
+    background-color:   #009639;
+
+}
+
+/* .custom-shape-divider-top-1660093145 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1660093145 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1660093145 .shape-fill {
+    fill: #4F4F4F;
+} */
