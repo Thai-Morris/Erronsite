@@ -1,10 +1,13 @@
 body{
-    background: rgba(255, 165, 0, 0);
+    background-color: #A47449;
+    
 
 }
 
 body p{
     color: white;
+    
+
 }
 
 #nav{
@@ -12,7 +15,7 @@ body p{
 }
 
 #navbarToggleExternalContent{
-    background-color: #272727 !important;
+    background-color: #272727 !important    ;
 
 }
 
@@ -28,6 +31,11 @@ body p{
 }
 
 #intro{
+    background-color:   #009639;
+
+}
+
+#middle{
     background-color:   #009639;
 
 }
