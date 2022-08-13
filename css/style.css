@@ -11,8 +11,8 @@ body p{
     background-color: #272727;
 }
 
-#navcollapse{
-    background-color: #272727;
+#navbarToggleExternalContent{
+    background-color: #272727 !important;
 
 }
 
