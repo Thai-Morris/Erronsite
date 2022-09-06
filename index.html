@@ -23,24 +23,7 @@ rel="stylesheet"
 </head>
 
 <body>
-  <!-- fix the navbar later -->
-   <!-- <nav id="nav" class="navbar navbar-light">
-    <div class="container-fluid">
-      <img src="images/logo.svg" alt="HandJobber" height="5%" width="5%">
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-        data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
-  </nav>
-  <div id="navcollapse" class="collapse" id="navbarToggleExternalContent">
-    <div class="shadow-3 p-4">
-      <button class="btn btn-link btn-block m-0"><a href="#">Home</a></button>
-      <button class="btn btn-link btn-block m-0"><a href="#">???</a></button>
-      <button class="btn btn-link btn-block m-0"><a href="Contact.html">contact us</a></button>
-    </div>
-  </div>  -->
+  
   <nav id="nav" class="navbar navbar-light">
     <div class="container-fluid">
       <img src="images/logo.svg" alt="music template" height="5%" width="5%">
@@ -60,19 +43,92 @@ rel="stylesheet"
   </div>
 
   <section class="" id="hero" style="background-image: url('images/herosection.jpg');">
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa in libero sunt, similique accusantium quos impedit ratione placeat nisi possimus, velit voluptates dolorem fuga tempore beatae quae amet id aliquam.</p>
-      <!-- Hero section here, image background with a svg footer -->
+      <p class="display-1 text-center">Need a job? </p>
+      <a class="btn btn-outline-light btn-lg m-2 hoverable animate__animated animate__zoomIn animate__delay-4s"
+      href="#intro" role="button" id="Hirebutton2">Learn More</a>   
+            <!-- Hero section here, image background with a svg footer -->
 
 </div>
   </section>
-  <img src="images/wavesNegative.svg" width="100%">
+  <!-- <img src="images/wavesNegative.svg" width="100%"> -->
   <section id="intro">
+    <h1 class="text-center container">Who are we?</h1>
     <p class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quam, eaque excepturi cumque sunt praesentium consequuntur repudiandae ullam nisi laborum ducimus necessitatibus aliquam dicta odit reprehenderit, quas error eveniet cum.</p>
 
   </section>
+  <!-- <img src="images/triangle.svg" width="100%"> -->
+
   <section id="middle">
+    <h1 class="text-center container">What we do?</h1>
+    <p class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex fuga molestias doloribus inventore deleniti perferendis ullam. Deserunt rem provident hic culpa odio aut! Ducimus quos eaque inventore dolores placeat reiciendis.</p>
+    <div class="container">
+      <div class="row gx-1 ">
+      
+
+          
+        <div class="col-md-6">
+        <i class="fa fa-desktop fa-4x text-center" aria-hidden="true"></i>
+        <h3 class="text-center container">We host jobs from clients</h1>
     
+        </div>
+    
+        <div class="col-md-6">
+          <i class="fa fa-map-marker fa-4x text-center" aria-hidden="true"></i>
+          <h3 class="text-center container">Handjobbers get the jobs</h1>
+
+    
+        </div>
+      
+    
+      </div>
+    </div>
   </section>
+  <section id="contact">
+    <div class="container px-5 my-5 px-5">
+        <div class="text-center mb-5">
+            <div class="feature bg-primary rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+            <h2 class="fw-bolder">Get in touch</h2>
+            <p class="lead mb-0">We'd love to hear from you</p>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                
+                <form id="contactForm"  action="/"
+                method="POST">
+                    <!-- Name input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="name" type="text" name="fullname" placeholder="Enter your name..." data-sb-validations="required" />
+                        <label for="name">Full name</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                    </div>
+                    <!-- Email address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="email" name="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                        <label for="email">Email address</label>
+                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                    </div>
+                    <!-- Phone number input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="phone" type="tel" name="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                        <label for="phone">Phone number</label>
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                    </div>
+                    <!-- Message input-->
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text"  name="message" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                        <label for="message">Message</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                    </div>
+                   
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <div class="d-grid"><button class="btn btn-light btn-lg btn-rounded btn-primary" data-mdb-ripple-color="dark" id="submitButton" type="submit">Submit</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
   
   <!-- Intro here, where we explain hand jobber -->
   <!-- MDB -->
