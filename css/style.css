@@ -35,6 +35,14 @@ body p{
 
 }
 
+#hero p{
+    padding-top: 23%;
+}
+
+#Hirebutton2{
+    margin-left: 45% !important;
+}
+
 #middle i{
     margin-left: 45%;
 
