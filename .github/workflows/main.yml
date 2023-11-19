@@ -7,6 +7,32 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
+      # Minify JavaScript
+    - name: Minify JavaScript
+      uses: nizarmah/auto-minify@v1.0.0
+      with:
+        js_folder: '/js' # Specify the path to your JS files
+
+    # Minify CSS
+    - name: Minify CSS
+      uses: nizarmah/auto-minify@v1.0.0
+      with:
+        css_folder: '/css'
+
+    # Minify HTML
+    - name: Minify HTML
+      uses: nizarmah/auto-minify@v1.0.0
+      with:
+        html_folder: '/' # Specify the path to your HTML files
+
+    # Commit minified files
+    - name: Commit minified files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        git commit -m "Minify assets" -a || true
+
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
